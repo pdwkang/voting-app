@@ -15,23 +15,19 @@
 
 <body>
 	<div class='page-header-wrapper'>
-	<a href='/'><div class='vote-button'>Vote</div></a>
-	<a href='/standings'><div class='standing-button'>Standings</div></a>
+		<a href='/'><div class='vote-button'>Vote</div></a>
+		<a href='/standings'><div class='standing-button'>Standings</div></a>
 	</div>
-	<%if ( msg == "noImages" ) {  %>
-		<h1>No more images to vote on</h1>
-		<% } else{ %>	
-		
-		<div class='recognize-header'>Do You recognize this person?</div>
-	<div class='image-vote'>
-		<img src='<%=imageToRender%>'>
+	
+	<div>
+		<% totals.map((pic, index)=>{ %>	
+			<div class='col-md-4 standings-each-image'>
+				<img src='<%=pic.imageUrl%>'>
+				<h1> <%=pic.total_votes%> </h1>
+			</div>
+		<% }) %>
+	</div>
 
-	</div>
-	<div class='yes-no-wrapper'>
-		<a href='/vote/up/<%=imageID%>'><button class='btn btn-success'>Yes</button></a>
-		<a href='/vote/down/<%=imageID%>'><button class='btn btn-warning'>No</button></a>
-	</div>
-	<% } %>
 </body>
 </html>
 

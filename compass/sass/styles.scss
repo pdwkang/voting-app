@@ -1,1 +1,53 @@
-body{background-color: blue;}
+body{
+	padding:0;
+	text-align: center;
+}
+.page-header-wrapper{
+	width:100vw;
+	padding:0;
+	margin:0;
+	.vote-button{
+		background-color: rgba(0,0,200,.6);
+		height:35px;
+		line-height: 35px;
+		color: white;
+		font-size: 17px;
+		width:49vw;
+		display: inline-block;
+		margin:0;
+		padding:0;
+	}
+	.standing-button{
+		color: white;
+		height:35px;
+		line-height: 35px;	
+		background-color: rgba(0,0,90,0.7);
+		font-size: 17px;
+		width:49vw;
+		display: inline-block;	
+		margin:0;
+		padding:0;
+	}		
+}
+
+
+.recognize-header{
+	margin-top:50px;
+}
+.image-vote{
+	margin-top: 50px;
+	height:60vh;
+	img{
+		height:100%;
+	}
+}
+
+.yes-no-wrapper{
+	margin-top:50px;
+}
+
+.standings-each-image{
+	img{
+		width:100%;
+	}
+}

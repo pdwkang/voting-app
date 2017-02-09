@@ -1,4 +1,61 @@
 /* line 1, ../../compass/sass/styles.scss */
 body {
-  background-color: blue;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 5, ../../compass/sass/styles.scss */
+.page-header-wrapper {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+/* line 9, ../../compass/sass/styles.scss */
+.page-header-wrapper .vote-button {
+  background-color: rgba(0, 0, 200, 0.6);
+  height: 35px;
+  line-height: 35px;
+  color: white;
+  font-size: 17px;
+  width: 49vw;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+/* line 20, ../../compass/sass/styles.scss */
+.page-header-wrapper .standing-button {
+  color: white;
+  height: 35px;
+  line-height: 35px;
+  background-color: rgba(0, 0, 90, 0.7);
+  font-size: 17px;
+  width: 49vw;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 34, ../../compass/sass/styles.scss */
+.recognize-header {
+  margin-top: 50px;
+}
+
+/* line 37, ../../compass/sass/styles.scss */
+.image-vote {
+  margin-top: 50px;
+  height: 60vh;
+}
+/* line 40, ../../compass/sass/styles.scss */
+.image-vote img {
+  height: 100%;
+}
+
+/* line 45, ../../compass/sass/styles.scss */
+.yes-no-wrapper {
+  margin-top: 50px;
+}
+
+/* line 50, ../../compass/sass/styles.scss */
+.standings-each-image img {
+  width: 100%;
 }
