@@ -33,8 +33,7 @@ router.get('/', (req, res, next)=>{
     connection.query(getImagesQuery, (error, results, fields)=>{
         // res.json(results);
         // Grab a random image from the results
-        var randomIndex = 1
-        // (Math.floor(Math.random() * results.length));
+        var randomIndex = (Math.floor(Math.random() * results.length));
         // res.json(results[randomIndex]);
         if(results.length == 0){
             res.render('index', { msg: "noImages" });
